@@ -4,15 +4,23 @@
     End Sub
 
     Private Sub cal_Click(sender As Object, e As EventArgs) Handles cal.Click
-        Dim num1, num2 As Double
 
+        'SE INICIALIZAN PRIMERAMENTE LAS VARIABLES.
+        Dim num1, num2 As Double
+        '-----------------------------------------------------------------------------------------
+
+
+        'DEFINIMOS CADA UNA DE ELLAS.
         num1 = txtnum1.Text
         num2 = txtnum2.Text
+        '----------------------------------------------------------------------------------------------
 
+
+        'UTILIZAMOS UNA CONDICION PARA SELECCIONAR EL TIPO DE OPERACION QUE QUERAMOS REALIZAR.
         If optsuma.Checked Then
             result.Text = num1 + num2
         End If
-
+        '---------------------------------------------------------------------------------------------
 
         If optresta.Checked Then
             result.Text = num1 - num2
@@ -31,10 +39,12 @@
         End If
 
 
+        'PARA SACAR EL PORCENTAJE LA OPERACIO QUE TENEMOS QUE REALIZAR ES LA MULTIPLICACION DE DOS NUMEROS
+        'ENTRE 100  
         If optporcen.Checked Then
             result.Text = num1 * num2 / 100
         End If
-
+        '-------------------------------------------------------------------------------------------------------
 
         If optelevacion.Checked Then
             result.Text = num1 ^ num2
@@ -50,6 +60,17 @@
 
 
 
+        '------------------------------------------------------------------------------------------------▽
+
+
+
+
+        'TENGAN UN LINDO DIA, GRACIAS POR VER MI CODIGO.  ＾▽＾
+
+
+
+
+        '-------------------------------------------------------------------------------------------------▽
 
 
 

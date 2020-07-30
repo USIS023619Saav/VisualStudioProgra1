@@ -163,9 +163,11 @@ Partial Class Form1
         'result
         '
         Me.result.AutoSize = True
+        Me.result.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.result.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.result.Location = New System.Drawing.Point(566, 79)
         Me.result.Name = "result"
-        Me.result.Size = New System.Drawing.Size(67, 13)
+        Me.result.Size = New System.Drawing.Size(69, 15)
         Me.result.TabIndex = 12
         Me.result.Text = "Respuesta ?"
         '
