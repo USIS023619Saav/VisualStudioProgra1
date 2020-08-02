@@ -174,7 +174,7 @@ Partial Class Form1
         '
         Me.cboOperaciones.FormattingEnabled = True
         Me.cboOperaciones.Items.AddRange(New Object() {"Suma", "Resta", "Multiplicacion", "Division", "Porcentaje", "Elevacion", "MOD"})
-        Me.cboOperaciones.Location = New System.Drawing.Point(537, 183)
+        Me.cboOperaciones.Location = New System.Drawing.Point(552, 180)
         Me.cboOperaciones.Name = "cboOperaciones"
         Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
         Me.cboOperaciones.TabIndex = 13
