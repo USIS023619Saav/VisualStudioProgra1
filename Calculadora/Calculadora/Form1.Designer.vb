@@ -35,6 +35,7 @@ Partial Class Form1
         Me.optmodis = New System.Windows.Forms.RadioButton()
         Me.optelevacion = New System.Windows.Forms.RadioButton()
         Me.result = New System.Windows.Forms.Label()
+        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'n1
@@ -84,13 +85,11 @@ Partial Class Form1
         'optsuma
         '
         Me.optsuma.AutoSize = True
-        Me.optsuma.Checked = True
         Me.optsuma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.optsuma.Location = New System.Drawing.Point(12, 150)
         Me.optsuma.Name = "optsuma"
         Me.optsuma.Size = New System.Drawing.Size(31, 17)
         Me.optsuma.TabIndex = 5
-        Me.optsuma.TabStop = True
         Me.optsuma.Text = "+"
         Me.optsuma.UseVisualStyleBackColor = True
         '
@@ -171,11 +170,22 @@ Partial Class Form1
         Me.result.TabIndex = 12
         Me.result.Text = "Respuesta ?"
         '
+        'cboOperaciones
+        '
+        Me.cboOperaciones.FormattingEnabled = True
+        Me.cboOperaciones.Items.AddRange(New Object() {"Suma", "Resta", "Multiplicacion", "Division", "Porcentaje", "Elevacion", "MOD"})
+        Me.cboOperaciones.Location = New System.Drawing.Point(537, 183)
+        Me.cboOperaciones.Name = "cboOperaciones"
+        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
+        Me.cboOperaciones.TabIndex = 13
+        Me.cboOperaciones.Text = "Seleccione una opcion."
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.cboOperaciones)
         Me.Controls.Add(Me.result)
         Me.Controls.Add(Me.optelevacion)
         Me.Controls.Add(Me.optmodis)
@@ -210,4 +220,5 @@ Partial Class Form1
     Friend WithEvents optmodis As RadioButton
     Friend WithEvents optelevacion As RadioButton
     Friend WithEvents result As Label
+    Friend WithEvents cboOperaciones As ComboBox
 End Class

@@ -60,6 +60,67 @@
 
 
 
+
+        '----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+        Select Case cboOperaciones.SelectedIndex
+            Case 0
+                result.Text = num1 + num2
+
+        End Select
+
+
+
+        Select Case cboOperaciones.SelectedIndex
+            Case 1
+                result.Text = num1 - num2
+
+        End Select
+
+
+
+
+
+        Select Case cboOperaciones.SelectedIndex
+            Case 2
+                result.Text = num1 * num2
+
+        End Select
+
+
+
+        Select Case cboOperaciones.SelectedIndex
+            Case 3
+                result.Text = num1 / num2
+        End Select
+
+
+
+        Select Case cboOperaciones.SelectedIndex
+            Case 4
+                result.Text = num1 * num2 / 100
+        End Select
+
+
+
+        Select Case cboOperaciones.SelectedIndex
+            Case 5
+                result.Text = num1 ^ num2
+        End Select
+
+
+
+        Select Case cboOperaciones.SelectedIndex
+            Case 6
+                result.Text = num1 Mod num2
+
+        End Select
+
+
+
         '------------------------------------------------------------------------------------------------▽
 
 
@@ -86,6 +147,10 @@
     End Sub
 
     Private Sub RadioButton1_CheckedChanged_1(sender As Object, e As EventArgs) Handles optmodis.CheckedChanged
+
+    End Sub
+
+    Private Sub comb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboOperaciones.SelectedIndexChanged
 
     End Sub
 End Class
