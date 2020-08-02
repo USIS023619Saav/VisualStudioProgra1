@@ -47,7 +47,7 @@ Partial Class Form1
         'lsttabla
         '
         Me.lsttabla.FormattingEnabled = True
-        Me.lsttabla.Location = New System.Drawing.Point(416, 86)
+        Me.lsttabla.Location = New System.Drawing.Point(419, 94)
         Me.lsttabla.Name = "lsttabla"
         Me.lsttabla.Size = New System.Drawing.Size(274, 238)
         Me.lsttabla.TabIndex = 2
