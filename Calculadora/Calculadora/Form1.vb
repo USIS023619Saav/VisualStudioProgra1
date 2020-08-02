@@ -5,6 +5,11 @@
 
     Private Sub cal_Click(sender As Object, e As EventArgs) Handles cal.Click
 
+
+
+
+
+
         'SE INICIALIZAN PRIMERAMENTE LAS VARIABLES.
         Dim num1, num2 As Double
         '-----------------------------------------------------------------------------------------
@@ -118,6 +123,8 @@
                 result.Text = num1 Mod num2
 
         End Select
+
+
 
 
 
