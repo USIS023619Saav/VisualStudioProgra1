@@ -84,23 +84,28 @@
 
 
 
-        Dim nt, i As SByte
+        Dim nt, i As Int64
+
+        i = 1
 
 
         nt = txttabla.Text
 
         lsttabla.Items.Clear()
-        If nt <= 12 Then
 
 
-            For i = 1 To 10
-                lsttabla.Items.Add(nt.ToString() + "X" + i.ToString() + "=" + (nt * i).ToString())
-            Next
 
-        Else
-            lsttabla.Items.Add("Ingrese solo tablas menores o iguales a 12")
+        Do While i <= 10
 
-        End If
+
+            lsttabla.Items.Add(nt.ToString() + "X" + i.ToString() + "=" + (nt * i).ToString())
+
+
+            i = i + 1
+
+        Loop
+
+
 
 
 
