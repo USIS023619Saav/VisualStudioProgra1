@@ -93,7 +93,8 @@
 
         lsttabla.Items.Clear()
 
-
+        '----------------------------------------------------------------------------------------------------------
+        'PONEMOS EN PRACTICA ESTRUCTURA DO WHILE
 
         Do While i <= 10
 
