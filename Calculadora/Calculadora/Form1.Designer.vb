@@ -22,203 +22,146 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.n1 = New System.Windows.Forms.Label()
-        Me.n2 = New System.Windows.Forms.Label()
-        Me.txtnum1 = New System.Windows.Forms.TextBox()
-        Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.cal = New System.Windows.Forms.Button()
-        Me.optsuma = New System.Windows.Forms.RadioButton()
-        Me.optresta = New System.Windows.Forms.RadioButton()
-        Me.optdivision = New System.Windows.Forms.RadioButton()
-        Me.optmultiplicacion = New System.Windows.Forms.RadioButton()
-        Me.optporcen = New System.Windows.Forms.RadioButton()
-        Me.optmodis = New System.Windows.Forms.RadioButton()
-        Me.optelevacion = New System.Windows.Forms.RadioButton()
-        Me.result = New System.Windows.Forms.Label()
-        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtserie = New System.Windows.Forms.TextBox()
+        Me.btnmedia = New System.Windows.Forms.Button()
+        Me.lblmedia = New System.Windows.Forms.Label()
+        Me.lblvarianza = New System.Windows.Forms.Label()
+        Me.lbldesviacion = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'n1
+        'Label1
         '
-        Me.n1.AutoSize = True
-        Me.n1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.n1.Location = New System.Drawing.Point(132, 75)
-        Me.n1.Name = "n1"
-        Me.n1.Size = New System.Drawing.Size(38, 13)
-        Me.n1.TabIndex = 0
-        Me.n1.Text = "Num 1"
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Location = New System.Drawing.Point(25, 39)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(37, 13)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Serie :"
         '
-        'n2
+        'txtserie
         '
-        Me.n2.AutoSize = True
-        Me.n2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.n2.Location = New System.Drawing.Point(350, 75)
-        Me.n2.Name = "n2"
-        Me.n2.Size = New System.Drawing.Size(38, 13)
-        Me.n2.TabIndex = 1
-        Me.n2.Text = "Num 2"
+        Me.txtserie.Location = New System.Drawing.Point(106, 32)
+        Me.txtserie.Name = "txtserie"
+        Me.txtserie.Size = New System.Drawing.Size(100, 20)
+        Me.txtserie.TabIndex = 15
+        Me.txtserie.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtnum1
+        'btnmedia
         '
-        Me.txtnum1.Location = New System.Drawing.Point(177, 72)
-        Me.txtnum1.Name = "txtnum1"
-        Me.txtnum1.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum1.TabIndex = 2
+        Me.btnmedia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnmedia.Location = New System.Drawing.Point(28, 182)
+        Me.btnmedia.Name = "btnmedia"
+        Me.btnmedia.Size = New System.Drawing.Size(75, 52)
+        Me.btnmedia.TabIndex = 16
+        Me.btnmedia.Text = "OPERAR"
+        Me.btnmedia.UseVisualStyleBackColor = True
         '
-        'txtnum2
+        'lblmedia
         '
-        Me.txtnum2.Location = New System.Drawing.Point(414, 72)
-        Me.txtnum2.Name = "txtnum2"
-        Me.txtnum2.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum2.TabIndex = 3
+        Me.lblmedia.AutoSize = True
+        Me.lblmedia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblmedia.Location = New System.Drawing.Point(158, 67)
+        Me.lblmedia.Name = "lblmedia"
+        Me.lblmedia.Size = New System.Drawing.Size(13, 13)
+        Me.lblmedia.TabIndex = 17
+        Me.lblmedia.Text = "?"
         '
-        'cal
+        'lblvarianza
         '
-        Me.cal.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.cal.Location = New System.Drawing.Point(294, 181)
-        Me.cal.Name = "cal"
-        Me.cal.Size = New System.Drawing.Size(75, 23)
-        Me.cal.TabIndex = 4
-        Me.cal.Text = "Calcular"
-        Me.cal.UseVisualStyleBackColor = False
+        Me.lblvarianza.AutoSize = True
+        Me.lblvarianza.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblvarianza.Location = New System.Drawing.Point(158, 108)
+        Me.lblvarianza.Name = "lblvarianza"
+        Me.lblvarianza.Size = New System.Drawing.Size(13, 13)
+        Me.lblvarianza.TabIndex = 18
+        Me.lblvarianza.Text = "?"
         '
-        'optsuma
+        'lbldesviacion
         '
-        Me.optsuma.AutoSize = True
-        Me.optsuma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optsuma.Location = New System.Drawing.Point(12, 150)
-        Me.optsuma.Name = "optsuma"
-        Me.optsuma.Size = New System.Drawing.Size(31, 17)
-        Me.optsuma.TabIndex = 5
-        Me.optsuma.Text = "+"
-        Me.optsuma.UseVisualStyleBackColor = True
+        Me.lbldesviacion.AutoSize = True
+        Me.lbldesviacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbldesviacion.Location = New System.Drawing.Point(158, 144)
+        Me.lbldesviacion.Name = "lbldesviacion"
+        Me.lbldesviacion.Size = New System.Drawing.Size(13, 13)
+        Me.lbldesviacion.TabIndex = 19
+        Me.lbldesviacion.Text = "?"
         '
-        'optresta
+        'Label2
         '
-        Me.optresta.AutoSize = True
-        Me.optresta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optresta.Location = New System.Drawing.Point(12, 181)
-        Me.optresta.Name = "optresta"
-        Me.optresta.Size = New System.Drawing.Size(28, 17)
-        Me.optresta.TabIndex = 6
-        Me.optresta.Text = "-"
-        Me.optresta.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Location = New System.Drawing.Point(25, 108)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(61, 13)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "VARIANZA"
         '
-        'optdivision
+        'Label3
         '
-        Me.optdivision.AutoSize = True
-        Me.optdivision.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optdivision.Location = New System.Drawing.Point(12, 214)
-        Me.optdivision.Name = "optdivision"
-        Me.optdivision.Size = New System.Drawing.Size(30, 17)
-        Me.optdivision.TabIndex = 7
-        Me.optdivision.Text = "/"
-        Me.optdivision.UseVisualStyleBackColor = True
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label3.Location = New System.Drawing.Point(25, 144)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(72, 13)
+        Me.Label3.TabIndex = 21
+        Me.Label3.Text = "DESVIACION"
         '
-        'optmultiplicacion
+        'Label4
         '
-        Me.optmultiplicacion.AutoSize = True
-        Me.optmultiplicacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optmultiplicacion.Location = New System.Drawing.Point(12, 246)
-        Me.optmultiplicacion.Name = "optmultiplicacion"
-        Me.optmultiplicacion.Size = New System.Drawing.Size(29, 17)
-        Me.optmultiplicacion.TabIndex = 8
-        Me.optmultiplicacion.Text = "*"
-        Me.optmultiplicacion.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label4.Location = New System.Drawing.Point(25, 67)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(41, 13)
+        Me.Label4.TabIndex = 22
+        Me.Label4.Text = "MEDIA"
         '
-        'optporcen
+        'Button1
         '
-        Me.optporcen.AutoSize = True
-        Me.optporcen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optporcen.Location = New System.Drawing.Point(12, 278)
-        Me.optporcen.Name = "optporcen"
-        Me.optporcen.Size = New System.Drawing.Size(33, 17)
-        Me.optporcen.TabIndex = 9
-        Me.optporcen.Text = "%"
-        Me.optporcen.UseVisualStyleBackColor = True
-        '
-        'optmodis
-        '
-        Me.optmodis.AutoSize = True
-        Me.optmodis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optmodis.Location = New System.Drawing.Point(12, 346)
-        Me.optmodis.Name = "optmodis"
-        Me.optmodis.Size = New System.Drawing.Size(50, 17)
-        Me.optmodis.TabIndex = 10
-        Me.optmodis.Text = "MOD"
-        Me.optmodis.UseVisualStyleBackColor = True
-        '
-        'optelevacion
-        '
-        Me.optelevacion.AutoSize = True
-        Me.optelevacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optelevacion.Location = New System.Drawing.Point(12, 314)
-        Me.optelevacion.Name = "optelevacion"
-        Me.optelevacion.Size = New System.Drawing.Size(31, 17)
-        Me.optelevacion.TabIndex = 11
-        Me.optelevacion.Text = "^"
-        Me.optelevacion.UseVisualStyleBackColor = True
-        '
-        'result
-        '
-        Me.result.AutoSize = True
-        Me.result.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.result.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.result.Location = New System.Drawing.Point(566, 79)
-        Me.result.Name = "result"
-        Me.result.Size = New System.Drawing.Size(69, 15)
-        Me.result.TabIndex = 12
-        Me.result.Text = "Respuesta ?"
-        '
-        'cboOperaciones
-        '
-        Me.cboOperaciones.FormattingEnabled = True
-        Me.cboOperaciones.Items.AddRange(New Object() {"Suma", "Resta", "Multiplicacion", "Division", "Porcentaje", "Elevacion", "MOD"})
-        Me.cboOperaciones.Location = New System.Drawing.Point(552, 180)
-        Me.cboOperaciones.Name = "cboOperaciones"
-        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
-        Me.cboOperaciones.TabIndex = 13
-        Me.cboOperaciones.Text = "Seleccione una opcion."
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button1.Location = New System.Drawing.Point(131, 182)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 52)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "NUEVO"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.cboOperaciones)
-        Me.Controls.Add(Me.result)
-        Me.Controls.Add(Me.optelevacion)
-        Me.Controls.Add(Me.optmodis)
-        Me.Controls.Add(Me.optporcen)
-        Me.Controls.Add(Me.optmultiplicacion)
-        Me.Controls.Add(Me.optdivision)
-        Me.Controls.Add(Me.optresta)
-        Me.Controls.Add(Me.optsuma)
-        Me.Controls.Add(Me.cal)
-        Me.Controls.Add(Me.txtnum2)
-        Me.Controls.Add(Me.txtnum1)
-        Me.Controls.Add(Me.n2)
-        Me.Controls.Add(Me.n1)
+        Me.ClientSize = New System.Drawing.Size(247, 302)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbldesviacion)
+        Me.Controls.Add(Me.lblvarianza)
+        Me.Controls.Add(Me.lblmedia)
+        Me.Controls.Add(Me.btnmedia)
+        Me.Controls.Add(Me.txtserie)
+        Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Name = "Form1"
-        Me.Text = "Calculadora"
+        Me.Text = "MATRICES Y POO"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents n1 As Label
-    Friend WithEvents n2 As Label
-    Friend WithEvents txtnum1 As TextBox
-    Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents cal As Button
-    Friend WithEvents optsuma As RadioButton
-    Friend WithEvents optresta As RadioButton
-    Friend WithEvents optdivision As RadioButton
-    Friend WithEvents optmultiplicacion As RadioButton
-    Friend WithEvents optporcen As RadioButton
-    Friend WithEvents optmodis As RadioButton
-    Friend WithEvents optelevacion As RadioButton
-    Friend WithEvents result As Label
-    Friend WithEvents cboOperaciones As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtserie As TextBox
+    Friend WithEvents btnmedia As Button
+    Friend WithEvents lblmedia As Label
+    Friend WithEvents lblvarianza As Label
+    Friend WithEvents lbldesviacion As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Button1 As Button
 End Class
