@@ -7,6 +7,8 @@
 
         For Each num In serie
 
+
+
             media += num
 
         Next

@@ -32,6 +32,16 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.grbestadistica = New System.Windows.Forms.DataGridView()
+        Me.x1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.f1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.n1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.x1xf1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.x21xf1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lbltotalf1 = New System.Windows.Forms.Label()
+        Me.lbltotal1x1xf1 = New System.Windows.Forms.Label()
+        Me.lbltotalx21xf1 = New System.Windows.Forms.Label()
+        CType(Me.grbestadistica, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -55,7 +65,7 @@ Partial Class Form1
         'btnmedia
         '
         Me.btnmedia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnmedia.Location = New System.Drawing.Point(28, 182)
+        Me.btnmedia.Location = New System.Drawing.Point(22, 375)
         Me.btnmedia.Name = "btnmedia"
         Me.btnmedia.Size = New System.Drawing.Size(75, 52)
         Me.btnmedia.TabIndex = 16
@@ -125,18 +135,89 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button1.Location = New System.Drawing.Point(131, 182)
+        Me.Button1.Location = New System.Drawing.Point(131, 375)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 52)
         Me.Button1.TabIndex = 23
         Me.Button1.Text = "NUEVO"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'grbestadistica
+        '
+        Me.grbestadistica.AllowUserToDeleteRows = False
+        Me.grbestadistica.BackgroundColor = System.Drawing.SystemColors.Control
+        Me.grbestadistica.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grbestadistica.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.x1, Me.f1, Me.n1, Me.x1xf1, Me.x21xf1})
+        Me.grbestadistica.GridColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.grbestadistica.Location = New System.Drawing.Point(250, 32)
+        Me.grbestadistica.Name = "grbestadistica"
+        Me.grbestadistica.Size = New System.Drawing.Size(543, 395)
+        Me.grbestadistica.TabIndex = 24
+        '
+        'x1
+        '
+        Me.x1.HeaderText = "x1"
+        Me.x1.Name = "x1"
+        '
+        'f1
+        '
+        Me.f1.HeaderText = "f1"
+        Me.f1.Name = "f1"
+        '
+        'n1
+        '
+        Me.n1.HeaderText = "n1"
+        Me.n1.Name = "n1"
+        '
+        'x1xf1
+        '
+        Me.x1xf1.HeaderText = "x1xf1"
+        Me.x1xf1.Name = "x1xf1"
+        '
+        'x21xf1
+        '
+        Me.x21xf1.HeaderText = "x21xf1"
+        Me.x21xf1.Name = "x21xf1"
+        '
+        'lbltotalf1
+        '
+        Me.lbltotalf1.AutoSize = True
+        Me.lbltotalf1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbltotalf1.Location = New System.Drawing.Point(388, 442)
+        Me.lbltotalf1.Name = "lbltotalf1"
+        Me.lbltotalf1.Size = New System.Drawing.Size(22, 13)
+        Me.lbltotalf1.TabIndex = 25
+        Me.lbltotalf1.Text = "0,0"
+        '
+        'lbltotal1x1xf1
+        '
+        Me.lbltotal1x1xf1.AutoSize = True
+        Me.lbltotal1x1xf1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbltotal1x1xf1.Location = New System.Drawing.Point(466, 442)
+        Me.lbltotal1x1xf1.Name = "lbltotal1x1xf1"
+        Me.lbltotal1x1xf1.Size = New System.Drawing.Size(22, 13)
+        Me.lbltotal1x1xf1.TabIndex = 26
+        Me.lbltotal1x1xf1.Text = "0,0"
+        '
+        'lbltotalx21xf1
+        '
+        Me.lbltotalx21xf1.AutoSize = True
+        Me.lbltotalx21xf1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbltotalx21xf1.Location = New System.Drawing.Point(544, 442)
+        Me.lbltotalx21xf1.Name = "lbltotalx21xf1"
+        Me.lbltotalx21xf1.Size = New System.Drawing.Size(22, 13)
+        Me.lbltotalx21xf1.TabIndex = 27
+        Me.lbltotalx21xf1.Text = "0,0"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(247, 302)
+        Me.ClientSize = New System.Drawing.Size(824, 464)
+        Me.Controls.Add(Me.lbltotalx21xf1)
+        Me.Controls.Add(Me.lbltotal1x1xf1)
+        Me.Controls.Add(Me.lbltotalf1)
+        Me.Controls.Add(Me.grbestadistica)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -150,6 +231,7 @@ Partial Class Form1
         Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Name = "Form1"
         Me.Text = "MATRICES Y POO"
+        CType(Me.grbestadistica, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -164,4 +246,13 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents grbestadistica As DataGridView
+    Friend WithEvents x1 As DataGridViewTextBoxColumn
+    Friend WithEvents f1 As DataGridViewTextBoxColumn
+    Friend WithEvents n1 As DataGridViewTextBoxColumn
+    Friend WithEvents x1xf1 As DataGridViewTextBoxColumn
+    Friend WithEvents x21xf1 As DataGridViewTextBoxColumn
+    Friend WithEvents lbltotalf1 As Label
+    Friend WithEvents lbltotal1x1xf1 As Label
+    Friend WithEvents lbltotalx21xf1 As Label
 End Class
