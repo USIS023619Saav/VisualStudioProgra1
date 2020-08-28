@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,205 +20,145 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.n1 = New System.Windows.Forms.Label()
-        Me.n2 = New System.Windows.Forms.Label()
-        Me.txtnum1 = New System.Windows.Forms.TextBox()
-        Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.cal = New System.Windows.Forms.Button()
-        Me.optsuma = New System.Windows.Forms.RadioButton()
-        Me.optresta = New System.Windows.Forms.RadioButton()
-        Me.optdivision = New System.Windows.Forms.RadioButton()
-        Me.optmultiplicacion = New System.Windows.Forms.RadioButton()
-        Me.optporcen = New System.Windows.Forms.RadioButton()
-        Me.optmodis = New System.Windows.Forms.RadioButton()
-        Me.optelevacion = New System.Windows.Forms.RadioButton()
-        Me.result = New System.Windows.Forms.Label()
-        Me.cboOperaciones = New System.Windows.Forms.ComboBox()
+        Me.txtcap = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BtnCalcular = New System.Windows.Forms.Button()
+        Me.txtinteres = New System.Windows.Forms.TextBox()
+        Me.txtaños = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblcompuesto = New System.Windows.Forms.Label()
+        Me.lblsimple = New System.Windows.Forms.Label()
+        Me.btnsalir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'n1
+        'txtcap
         '
-        Me.n1.AutoSize = True
-        Me.n1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.n1.Location = New System.Drawing.Point(132, 75)
-        Me.n1.Name = "n1"
-        Me.n1.Size = New System.Drawing.Size(38, 13)
-        Me.n1.TabIndex = 0
-        Me.n1.Text = "Num 1"
+        Me.txtcap.Location = New System.Drawing.Point(283, 148)
+        Me.txtcap.Name = "txtcap"
+        Me.txtcap.Size = New System.Drawing.Size(100, 26)
+        Me.txtcap.TabIndex = 0
         '
-        'n2
+        'Label1
         '
-        Me.n2.AutoSize = True
-        Me.n2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.n2.Location = New System.Drawing.Point(350, 75)
-        Me.n2.Name = "n2"
-        Me.n2.Size = New System.Drawing.Size(38, 13)
-        Me.n2.TabIndex = 1
-        Me.n2.Text = "Num 2"
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Location = New System.Drawing.Point(180, 155)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(66, 20)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Capital :"
         '
-        'txtnum1
+        'BtnCalcular
         '
-        Me.txtnum1.Location = New System.Drawing.Point(177, 72)
-        Me.txtnum1.Name = "txtnum1"
-        Me.txtnum1.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum1.TabIndex = 2
+        Me.BtnCalcular.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BtnCalcular.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.BtnCalcular.Location = New System.Drawing.Point(283, 436)
+        Me.BtnCalcular.Name = "BtnCalcular"
+        Me.BtnCalcular.Size = New System.Drawing.Size(207, 94)
+        Me.BtnCalcular.TabIndex = 2
+        Me.BtnCalcular.Text = "CALCULAR"
+        Me.BtnCalcular.UseVisualStyleBackColor = False
         '
-        'txtnum2
+        'txtinteres
         '
-        Me.txtnum2.Location = New System.Drawing.Point(414, 72)
-        Me.txtnum2.Name = "txtnum2"
-        Me.txtnum2.Size = New System.Drawing.Size(100, 20)
-        Me.txtnum2.TabIndex = 3
+        Me.txtinteres.Location = New System.Drawing.Point(520, 151)
+        Me.txtinteres.Name = "txtinteres"
+        Me.txtinteres.Size = New System.Drawing.Size(100, 26)
+        Me.txtinteres.TabIndex = 3
         '
-        'cal
+        'txtaños
         '
-        Me.cal.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.cal.Location = New System.Drawing.Point(294, 181)
-        Me.cal.Name = "cal"
-        Me.cal.Size = New System.Drawing.Size(75, 23)
-        Me.cal.TabIndex = 4
-        Me.cal.Text = "Calcular"
-        Me.cal.UseVisualStyleBackColor = False
+        Me.txtaños.Location = New System.Drawing.Point(819, 152)
+        Me.txtaños.Name = "txtaños"
+        Me.txtaños.Size = New System.Drawing.Size(100, 26)
+        Me.txtaños.TabIndex = 4
         '
-        'optsuma
+        'Label2
         '
-        Me.optsuma.AutoSize = True
-        Me.optsuma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optsuma.Location = New System.Drawing.Point(12, 150)
-        Me.optsuma.Name = "optsuma"
-        Me.optsuma.Size = New System.Drawing.Size(31, 17)
-        Me.optsuma.TabIndex = 5
-        Me.optsuma.Text = "+"
-        Me.optsuma.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Location = New System.Drawing.Point(686, 158)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(112, 20)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Tiempo (Años)"
         '
-        'optresta
+        'Label3
         '
-        Me.optresta.AutoSize = True
-        Me.optresta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optresta.Location = New System.Drawing.Point(12, 181)
-        Me.optresta.Name = "optresta"
-        Me.optresta.Size = New System.Drawing.Size(28, 17)
-        Me.optresta.TabIndex = 6
-        Me.optresta.Text = "-"
-        Me.optresta.UseVisualStyleBackColor = True
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label3.Location = New System.Drawing.Point(443, 158)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(67, 20)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Interes :"
         '
-        'optdivision
+        'lblcompuesto
         '
-        Me.optdivision.AutoSize = True
-        Me.optdivision.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optdivision.Location = New System.Drawing.Point(12, 214)
-        Me.optdivision.Name = "optdivision"
-        Me.optdivision.Size = New System.Drawing.Size(30, 17)
-        Me.optdivision.TabIndex = 7
-        Me.optdivision.Text = "/"
-        Me.optdivision.UseVisualStyleBackColor = True
+        Me.lblcompuesto.AutoSize = True
+        Me.lblcompuesto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblcompuesto.Location = New System.Drawing.Point(723, 326)
+        Me.lblcompuesto.Name = "lblcompuesto"
+        Me.lblcompuesto.Size = New System.Drawing.Size(153, 20)
+        Me.lblcompuesto.TabIndex = 7
+        Me.lblcompuesto.Text = "Interes Compuesto :"
         '
-        'optmultiplicacion
+        'lblsimple
         '
-        Me.optmultiplicacion.AutoSize = True
-        Me.optmultiplicacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optmultiplicacion.Location = New System.Drawing.Point(12, 246)
-        Me.optmultiplicacion.Name = "optmultiplicacion"
-        Me.optmultiplicacion.Size = New System.Drawing.Size(29, 17)
-        Me.optmultiplicacion.TabIndex = 8
-        Me.optmultiplicacion.Text = "*"
-        Me.optmultiplicacion.UseVisualStyleBackColor = True
+        Me.lblsimple.AutoSize = True
+        Me.lblsimple.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblsimple.Location = New System.Drawing.Point(263, 326)
+        Me.lblsimple.Name = "lblsimple"
+        Me.lblsimple.Size = New System.Drawing.Size(119, 20)
+        Me.lblsimple.TabIndex = 9
+        Me.lblsimple.Text = "Interes Simple :"
         '
-        'optporcen
+        'btnsalir
         '
-        Me.optporcen.AutoSize = True
-        Me.optporcen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optporcen.Location = New System.Drawing.Point(12, 278)
-        Me.optporcen.Name = "optporcen"
-        Me.optporcen.Size = New System.Drawing.Size(33, 17)
-        Me.optporcen.TabIndex = 9
-        Me.optporcen.Text = "%"
-        Me.optporcen.UseVisualStyleBackColor = True
-        '
-        'optmodis
-        '
-        Me.optmodis.AutoSize = True
-        Me.optmodis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optmodis.Location = New System.Drawing.Point(12, 346)
-        Me.optmodis.Name = "optmodis"
-        Me.optmodis.Size = New System.Drawing.Size(50, 17)
-        Me.optmodis.TabIndex = 10
-        Me.optmodis.Text = "MOD"
-        Me.optmodis.UseVisualStyleBackColor = True
-        '
-        'optelevacion
-        '
-        Me.optelevacion.AutoSize = True
-        Me.optelevacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.optelevacion.Location = New System.Drawing.Point(12, 314)
-        Me.optelevacion.Name = "optelevacion"
-        Me.optelevacion.Size = New System.Drawing.Size(31, 17)
-        Me.optelevacion.TabIndex = 11
-        Me.optelevacion.Text = "^"
-        Me.optelevacion.UseVisualStyleBackColor = True
-        '
-        'result
-        '
-        Me.result.AutoSize = True
-        Me.result.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.result.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.result.Location = New System.Drawing.Point(566, 79)
-        Me.result.Name = "result"
-        Me.result.Size = New System.Drawing.Size(69, 15)
-        Me.result.TabIndex = 12
-        Me.result.Text = "Respuesta ?"
-        '
-        'cboOperaciones
-        '
-        Me.cboOperaciones.FormattingEnabled = True
-        Me.cboOperaciones.Items.AddRange(New Object() {"Suma", "Resta", "Multiplicacion", "Division", "Porcentaje", "Elevacion", "MOD"})
-        Me.cboOperaciones.Location = New System.Drawing.Point(552, 180)
-        Me.cboOperaciones.Name = "cboOperaciones"
-        Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
-        Me.cboOperaciones.TabIndex = 13
-        Me.cboOperaciones.Text = "Seleccione una opcion."
+        Me.btnsalir.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnsalir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnsalir.Location = New System.Drawing.Point(623, 436)
+        Me.btnsalir.Name = "btnsalir"
+        Me.btnsalir.Size = New System.Drawing.Size(207, 94)
+        Me.btnsalir.TabIndex = 10
+        Me.btnsalir.Text = "Salir"
+        Me.btnsalir.UseVisualStyleBackColor = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.cboOperaciones)
-        Me.Controls.Add(Me.result)
-        Me.Controls.Add(Me.optelevacion)
-        Me.Controls.Add(Me.optmodis)
-        Me.Controls.Add(Me.optporcen)
-        Me.Controls.Add(Me.optmultiplicacion)
-        Me.Controls.Add(Me.optdivision)
-        Me.Controls.Add(Me.optresta)
-        Me.Controls.Add(Me.optsuma)
-        Me.Controls.Add(Me.cal)
-        Me.Controls.Add(Me.txtnum2)
-        Me.Controls.Add(Me.txtnum1)
-        Me.Controls.Add(Me.n2)
-        Me.Controls.Add(Me.n1)
+        Me.ClientSize = New System.Drawing.Size(1090, 669)
+        Me.Controls.Add(Me.btnsalir)
+        Me.Controls.Add(Me.lblsimple)
+        Me.Controls.Add(Me.lblcompuesto)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtaños)
+        Me.Controls.Add(Me.txtinteres)
+        Me.Controls.Add(Me.BtnCalcular)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtcap)
         Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form1"
-        Me.Text = "Calculadora"
+        Me.Text = "Ejercicios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents n1 As Label
-    Friend WithEvents n2 As Label
-    Friend WithEvents txtnum1 As TextBox
-    Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents cal As Button
-    Friend WithEvents optsuma As RadioButton
-    Friend WithEvents optresta As RadioButton
-    Friend WithEvents optdivision As RadioButton
-    Friend WithEvents optmultiplicacion As RadioButton
-    Friend WithEvents optporcen As RadioButton
-    Friend WithEvents optmodis As RadioButton
-    Friend WithEvents optelevacion As RadioButton
-    Friend WithEvents result As Label
-    Friend WithEvents cboOperaciones As ComboBox
+    Friend WithEvents txtcap As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents BtnCalcular As Button
+    Friend WithEvents txtinteres As TextBox
+    Friend WithEvents txtaños As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents lblcompuesto As Label
+    Friend WithEvents lblsimple As Label
+    Friend WithEvents btnsalir As Button
 End Class
